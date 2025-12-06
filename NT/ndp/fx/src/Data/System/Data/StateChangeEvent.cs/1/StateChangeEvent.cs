@@ -1,0 +1,82 @@
+//------------------------------------------------------------------------------ 
+// <copyright file="StateChangeEvent.cs" company="Microsoft">
+//      Copyright (c) Microsoft Corporation.  All rights reserved.
+// </copyright>
+// <owner current="true" primary="true">[....]</owner> 
+// <owner current="true" primary="false">[....]</owner>
+//----------------------------------------------------------------------------- 
+ 
+namespace System.Data {
+    using System; 
+
+#if WINFSInternalOnly
+    internal
+#else 
+    public
+#endif 
+    sealed class StateChangeEventArgs : System.EventArgs { 
+        private ConnectionState originalState;
+        private ConnectionState currentState; 
+
+        public StateChangeEventArgs(ConnectionState originalState, ConnectionState currentState) {
+            this.originalState = originalState;
+            this.currentState = currentState; 
+        }
+ 
+        public ConnectionState CurrentState { 
+            get {
+                return this.currentState; 
+            }
+        }
+
+        public ConnectionState OriginalState { 
+            get {
+                return this.originalState; 
+            } 
+        }
+    } 
+}
+
+// File provided for Reference Use Only by Microsoft Corporation (c) 2007.
+// Copyright (c) Microsoft Corporation. All rights reserved.
+//------------------------------------------------------------------------------ 
+// <copyright file="StateChangeEvent.cs" company="Microsoft">
+//      Copyright (c) Microsoft Corporation.  All rights reserved.
+// </copyright>
+// <owner current="true" primary="true">[....]</owner> 
+// <owner current="true" primary="false">[....]</owner>
+//----------------------------------------------------------------------------- 
+ 
+namespace System.Data {
+    using System; 
+
+#if WINFSInternalOnly
+    internal
+#else 
+    public
+#endif 
+    sealed class StateChangeEventArgs : System.EventArgs { 
+        private ConnectionState originalState;
+        private ConnectionState currentState; 
+
+        public StateChangeEventArgs(ConnectionState originalState, ConnectionState currentState) {
+            this.originalState = originalState;
+            this.currentState = currentState; 
+        }
+ 
+        public ConnectionState CurrentState { 
+            get {
+                return this.currentState; 
+            }
+        }
+
+        public ConnectionState OriginalState { 
+            get {
+                return this.originalState; 
+            } 
+        }
+    } 
+}
+
+// File provided for Reference Use Only by Microsoft Corporation (c) 2007.
+// Copyright (c) Microsoft Corporation. All rights reserved.
