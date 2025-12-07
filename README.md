@@ -25,4 +25,4 @@ Read the Useage and execute the batch file.
 :: --------------------------------------------------------------------------------------------
 </pre>
 
-To Build the Buffer Lab or Samples use NMAKE from Microsoft or AT&T.
+To Build the Buffer Lab or Samples use NMAKE or MSBUILD from Microsoft or AT&T. MSBUILD may throw a 'cmd.exe' spawning error this can be ignored.
