@@ -26,3 +26,5 @@ Read the Useage and execute the batch file.
 </pre>
 
 To Build the Buffer Lab or Samples use NMAKE or MSBUILD from Microsoft or AT&T. MSBUILD may throw a 'cmd.exe' spawning error this can be ignored.
+
+You will need to build sdkdiif or windiff first and compare NTDDSCSI.H
